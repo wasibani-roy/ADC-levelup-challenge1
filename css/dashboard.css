@@ -30,6 +30,15 @@
     text-align: left !important;
     padding: 15px;
 }
+.home-link{
+    width:20% !important;
+}
+.order-link{
+    width:20% !important;
+}
+.logout-link{
+    width:18% !important;
+}
 table thead tr th {
     padding: 15px 30px;
     color: #000;
@@ -75,6 +84,30 @@ table tbody tr td {
     -webkit-transition: all 300ms ease-in-out;
     -moz-transition: all 300ms ease-in-out;
     transition: all 300ms ease-in-out;
+}
+.avatar-img{
+    width: 100%;
+}
+@media(max-width: 700px){
+    table{
+        width: 100%;
+        height: auto;
+    }
+    table thead tr th {
+    padding: 2px 3px;
+    color: #000;
+    font-weight: 600;
+    font-size: 10px;
+}
+table tbody tr td {
+    padding: 2px 3px;
+    color: #000;
+    font-size: 10px;
+}
+.btn1-primary {
+    padding: 2px 3px;
+    margin: 8px 0;
+}
 }
 @media(min-width: 601px){
 	.ADC-C1-col.m4, .ADC-C1-third {

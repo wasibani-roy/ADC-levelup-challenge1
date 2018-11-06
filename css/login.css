@@ -44,6 +44,7 @@
 }
 .ADC-CH1-circle {
     border-radius: 50%;
+    width: 30%;
 }
 .ADC-CH1-container, .ADC-CH1-panel {
     padding: 0.01em 16px;

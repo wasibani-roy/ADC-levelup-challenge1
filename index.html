@@ -12,23 +12,23 @@
   <div class="ADC-CH1-bar ADC-CH1-white ADC-CH1-wide ADC-CH1-padding ADC-CH1-card">
     <a href="#home" class="ADC-CH1-bar-item ADC-CH1-button"><b>Send</b>IT</a>
     <div class="ADC-CH1-right ADC-CH1-hide-small">
-      <a href="#" class="ADC-CH1-bar-item ADC-CH1-button">Projects</a>
-      <a href="#" class="ADC-CH1-bar-item ADC-CH1-button">About</a>
+      <a href="admin.html" class="ADC-CH1-bar-item ADC-CH1-button">Admin</a>
+      <a href="user.html" class="ADC-CH1-bar-item ADC-CH1-button">User</a>
       <a href="#" class="ADC-CH1-bar-item ADC-CH1-button">Contact</a>
     </div>
   </div>
 </div>
 
 <!-- Header -->
-<header class="ADC-CH1-display-container ADC-CH1-content ADC-CH1-wide" style="max-width:1500px;" id="home">
-  <img class="ADC-CH1-image" src="image/sendIT-parcel.jpg" alt="Architecture" width="1500" height="800">
+<header class="ADC-CH1-display-container ADC-CH1-content ADC-CH1-wide"  id="home">
+  <img class="ADC-CH1-image" src="image/sendIT-parcel.jpg" alt="Architecture">
   <div class="ADC-CH1-display-middle ADC-CH1-margin-top ADC-CH1-center">
     <h1 class="ADC-CH1-xxlarge ADC-CH1-text-white"><span class="ADC-CH1-padding ADC-CH1-black ADC-CH1-opacity-min"><b>SendIT</b></span> <span class="ADC-CH1-hide-small ADC-CH1-text-light-grey">Parcel Delivery</span></h1>
   </div>
 </header>
 
 <!-- Page content -->
-<div class="ADC-CH1-content ADC-CH1-padding" style="max-width:1564px">
+<div class="ADC-CH1-content ADC-CH1-padding">
 
   <!-- About Section -->
   <div class="ADC-CH1-container ADC-CH1-padding-32" id="about">
@@ -39,23 +39,40 @@
   </div>
 
   <div id="id01" class="ADC-CH1-modal">
-    <div class="ADC-CH1-modal-content ADC-CH1-card-4 ADC-CH1-animate-zoom" style="max-width:600px">
+    <div class="ADC-CH1-modal-content ADC-CH1-card-4 ADC-CH1-animate-zoom">
   
       <div class="ADC-CH1-center"><br>
         <span onclick="document.getElementById('id01').style.display='none'" class="ADC-CH1-button ADC-CH1-xlarge ADC-CH1-transparent ADC-CH1-display-topright" title="Close Modal">&times;</span>
-        <img src="image/avatar3.png" alt="Avatar" style="width:30%" class="ADC-CH1-circle ADC-CH1-margin-top">
+        <img src="image/avatar3.png" alt="Avatar" class="ADC-CH1-circle ADC-CH1-margin-top">
       </div>
 
-      <form class="ADC-CH1-container" action="">
+      <div class="ADC-CH1-container">
         <div class="ADC-CH1-section">
-          <label><b>Username</b></label>
-          <input class="ADC-CH1-input ADC-CH1-border ADC-CH1-margin-bottom" type="text" placeholder="Enter Username" name="usrname" required>
-          <label><b>Password</b></label>
-          <input class="ADC-CH1-input ADC-CH1-border" type="text" placeholder="Enter Password" name="psw" required>
-          <button class="ADC-CH1-button ADC-CH1-block ADC-CH1-green ADC-CH1-section ADC-CH1-padding" type="submit">Login</button>
-          <input class="ADC-CH1-check ADC-CH1-margin-top" type="checkbox" checked="checked"> Remember me
-        </div>
-      </form>
+      <label for="username" class="control-label">Username</label>
+        <input type="name" class="ADC-CH1-input ADC-CH1-border ADC-CH1-margin-bottom" name="username" placeholder="Username" id="user"><br>
+        <label for="Password" class="control-label">Password</label>
+         <input type="password" name= "password" id="pass" class="ADC-CH1-input ADC-CH1-border" placeholder="password"><br>
+         <button class="ADC-CH1-button ADC-CH1-block ADC-CH1-green ADC-CH1-section ADC-CH1-padding" onclick="loginUser()">Login</button>
+    </div>
+    <script language="javascript" type="text/javascript">
+    document.getElementById("myForm")
+    window.loginUser = function() {
+      console.log("try 1")
+      var x = document.getElementById('user').value;
+      var y = document.getElementById('pass').value;
+      if (x=="admin") {
+          if (y =="admin") {
+            console.log("am here")
+            document.location="admin.html"
+          }
+  }
+  else
+    document.location="user.html"
+}
+</script>
+<input class="ADC-CH1-check ADC-CH1-margin-top" type="checkbox" checked="checked"> Remember me 
+
+      </div>
 
       <div class="ADC-CH1-container ADC-CH1-border-top ADC-CH1-padding-16 ADC-CH1-light-grey">
         <button onclick="document.getElementById('id01').style.display='none'" type="button" class="ADC-CH1-button ADC-CH1-red">Cancel</button>
@@ -66,11 +83,11 @@
   </div>
 
   <div id="id02" class="ADC-CH1-modal">
-    <div class="ADC-CH1-modal-content ADC-CH1-card-4 ADC-CH1-animate-zoom" style="max-width:600px">
+    <div class="ADC-CH1-modal-content ADC-CH1-card-4 ADC-CH1-animate-zoom">
   
       <div class="ADC-CH1-center"><br>
         <span onclick="document.getElementById('id02').style.display='none'" class="ADC-CH1-button ADC-CH1-xlarge ADC-CH1-transparent ADC-CH1-display-topright" title="Close Modal">&times;</span>
-        <img src="image/avatar3.png" alt="Avatar" style="width:30%" class="ADC-CH1-circle ADC-CH1-margin-top">
+        <img src="image/avatar3.png" alt="Avatar" class="ADC-CH1-circle ADC-CH1-margin-top">
       </div>
 
       <form class="ADC-CH1-container" action="">
