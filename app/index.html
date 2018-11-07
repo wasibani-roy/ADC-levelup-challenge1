@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<title>SendIT</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/index.css">
+<link rel="stylesheet" href="css/login.css">
+<body>
+
+<div class="ADC-CH1-top">
+  <div class="ADC-CH1-bar ADC-CH1-white ADC-CH1-wide ADC-CH1-padding ADC-CH1-card">
+    <a href="#home" class="ADC-CH1-bar-item ADC-CH1-button"><b>Send</b>IT</a>
+    <div class="ADC-CH1-right ADC-CH1-hide-small">
+      <a href="#" class="ADC-CH1-bar-item ADC-CH1-button">Projects</a>
+      <a href="#" class="ADC-CH1-bar-item ADC-CH1-button">About</a>
+      <a href="#" class="ADC-CH1-bar-item ADC-CH1-button">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="ADC-CH1-display-container ADC-CH1-content ADC-CH1-wide" style="max-width:1500px;" id="home">
+  <img class="ADC-CH1-image" src="image/sendIT-parcel.jpg" alt="Architecture" width="1500" height="800">
+  <div class="ADC-CH1-display-middle ADC-CH1-margin-top ADC-CH1-center">
+    <h1 class="ADC-CH1-xxlarge ADC-CH1-text-white"><span class="ADC-CH1-padding ADC-CH1-black ADC-CH1-opacity-min"><b>SendIT</b></span> <span class="ADC-CH1-hide-small ADC-CH1-text-light-grey">Parcel Delivery</span></h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="ADC-CH1-content ADC-CH1-padding" style="max-width:1564px">
+
+  <!-- About Section -->
+  <div class="ADC-CH1-container ADC-CH1-padding-32" id="about">
+    <h3 class="ADC-CH1-border-bottom ADC-CH1-border-light-grey ADC-CH1-padding-16">About</h3>
+    <p>Welcome to SendIT percel delivery service. We have been in existance for close to a decade picking up a wealth of knowledge in the business of parcel transfer. We have a number of customers who trust us everyday to deliver there parcels anywhere anytime in a safe and efficient manner. To become a part of our family please click the register button below or to continue using the service select the Login button
+    </p>
+    <p style="text-align:center;"><button onclick="document.getElementById('id01').style.display='block'" class="ADC-CH1-button ADC-CH1-green ADC-CH1-large">Login</button> <button onclick="document.getElementById('id02').style.display='block'" class="ADC-CH1-button ADC-CH12-green ADC-CH1-large">Register</button></p>
+  </div>
+
+  <div id="id01" class="ADC-CH1-modal">
+    <div class="ADC-CH1-modal-content ADC-CH1-card-4 ADC-CH1-animate-zoom" style="max-width:600px">
+  
+      <div class="ADC-CH1-center"><br>
+        <span onclick="document.getElementById('id01').style.display='none'" class="ADC-CH1-button ADC-CH1-xlarge ADC-CH1-transparent ADC-CH1-display-topright" title="Close Modal">&times;</span>
+        <img src="image/avatar3.png" alt="Avatar" style="width:30%" class="ADC-CH1-circle ADC-CH1-margin-top">
+      </div>
+
+      <form class="ADC-CH1-container" action="https://www.ADC-CH1schools.com/action_page.php">
+        <div class="ADC-CH1-section">
+          <label><b>Username</b></label>
+          <input class="ADC-CH1-input ADC-CH1-border ADC-CH1-margin-bottom" type="text" placeholder="Enter Username" name="usrname" required>
+          <label><b>Password</b></label>
+          <input class="ADC-CH1-input ADC-CH1-border" type="text" placeholder="Enter Password" name="psw" required>
+          <button class="ADC-CH1-button ADC-CH1-block ADC-CH1-green ADC-CH1-section ADC-CH1-padding" type="submit">Login</button>
+          <input class="ADC-CH1-check ADC-CH1-margin-top" type="checkbox" checked="checked"> Remember me
+        </div>
+      </form>
+
+      <div class="ADC-CH1-container ADC-CH1-border-top ADC-CH1-padding-16 ADC-CH1-light-grey">
+        <button onclick="document.getElementById('id01').style.display='none'" type="button" class="ADC-CH1-button ADC-CH1-red">Cancel</button>
+        <span class="ADC-CH1-right ADC-CH1-padding ADC-CH1-hide-small">Forgot <a href="#">password?</a></span>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="id02" class="ADC-CH1-modal">
+    <div class="ADC-CH1-modal-content ADC-CH1-card-4 ADC-CH1-animate-zoom" style="max-width:600px">
+  
+      <div class="ADC-CH1-center"><br>
+        <span onclick="document.getElementById('id02').style.display='none'" class="ADC-CH1-button ADC-CH1-xlarge ADC-CH1-transparent ADC-CH1-display-topright" title="Close Modal">&times;</span>
+        <img src="image/avatar3.png" alt="Avatar" style="width:30%" class="ADC-CH1-circle ADC-CH1-margin-top">
+      </div>
+
+      <form class="ADC-CH1-container" action="https://www.ADC-CH1schools.com/action_page.php">
+        <div class="ADC-CH1-section">
+          <label><b>Username</b></label>
+          <input class="ADC-CH1-input ADC-CH1-border ADC-CH1-margin-bottom" type="text" placeholder="Enter Username" name="usrname" required>
+          <label><b>Email</b></label>
+          <input class="ADC-CH1-input ADC-CH1-border ADC-CH1-margin-bottom" type="text" placeholder="Enter Email" name="email" required>
+          <label><b>Password</b></label>
+          <input class="ADC-CH1-input ADC-CH1-border" type="text" placeholder="Enter Password" name="psw" required>
+          <button class="ADC-CH1-button ADC-CH1-block ADC-CH1-green ADC-CH1-section ADC-CH1-padding" type="submit">Register</button>
+        </div>
+      </form>
+
+      <div class="ADC-CH1-container ADC-CH1-border-top ADC-CH1-padding-16 ADC-CH1-light-grey">
+        <button onclick="document.getElementById('id02').style.display='none'" type="button" class="ADC-CH1-button ADC-CH1-red">Cancel</button>
+      </div>
+
+    </div>
+  </div>
+<!-- End page content -->
+</div>
+
+
+<!-- Footer -->
+<footer class="ADC-CH1-center ADC-CH1-black ADC-CH1-padding-16">
+  <p>Powered by <a href="default.html" title="ADC-CH1.CSS" target="_blank" class="ADC-CH1-hover-text-green">Andela</a></p>
+</footer>
+
+</body>
+
+</html>
