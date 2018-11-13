@@ -77,7 +77,7 @@
               <td>15000/=</td>
               <td>kireka</td>
               <td>Pending</td>
-              <td>HQ</td>
+              <td>Headquaters</td>
             </tr>
             <tr>
               <td>Grace Karabo</td>
@@ -85,6 +85,27 @@
               <td>mukono</td>
               <td>In Transit</td>
               <td>Kampala</td>
+            </tr>
+            <tr>
+              <td>Joshua</td>
+              <td>500000/=</td>
+              <td>Arua</td>
+              <td>In Transit</td>
+              <td>Gulu</td>
+            </tr>
+            <tr>
+              <td>Mukasa</td>
+              <td>250000/=</td>
+              <td>Masaka</td>
+              <td>In Transit</td>
+              <td>Kampala</td>
+            </tr>
+            <tr>
+              <td>Martha</td>
+              <td>250000/=</td>
+              <td>Mbale</td>
+              <td>Pending</td>
+              <td>Headquaters</td>
             </tr>
           <tbody>
          </table>
@@ -127,7 +148,7 @@
               <td>Gulu</td>
               <td>4/9/2018 09:30:05</td>
               <td>Karuma</td>
-              <td><button class="btn1 btn1-primary" onclick="">Edit Location</button><button class="btn1 btn1-primary" onclick="">Edit Status</button></td>
+              <td><button class="btn1 btn1-primary" onclick="document.getElementById('id03').style.display='block'">Edit Location</button><button class="btn1 btn1-primary" onclick="document.getElementById('id04').style.display='block'">Edit Status</button></td>
             </tr>
             <tr>
               <td>Grace</td>
@@ -135,7 +156,7 @@
               <td>Mbarara</td>
               <td>5/9/2018 16:00:05</td>
               <td>Mbarara</td>
-              <td><button class="btn1 btn1-primary" onclick="">Edit Location</button><button class="btn1 btn1-primary" onclick="">Edit Status</button></td>
+              <td><button class="btn1 btn1-primary" onclick="document.getElementById('id05').style.display='block'">Edit Location</button><button class="btn1 btn1-primary" onclick="document.getElementById('id06').style.display='block'">Edit Status</button></td>
             </tr>
           <tbody>
          </table>
@@ -173,7 +194,52 @@
 
     </div>
   </div>
+
+  <div id="id03" class="ADC-CH1-modal">
+    <div class="ADC-CH1-modal-content ADC-CH1-card-4 ADC-CH1-animate-zoom">
   
+      <div class="ADC-CH1-center"><br>
+        <span onclick="document.getElementById('id03').style.display='none'" class="ADC-CH1-button ADC-CH1-xlarge ADC-CH1-transparent ADC-CH1-display-topright" title="Close Modal">&times;</span>
+      </div>
+
+      <div id="content-change">
+
+            <div class="container">
+                <h1>Change Present Location</h1>
+                    <form action="#Tokyo">
+                     
+                    <input type="text" name="parcel_number" value="#003A" class="change-location" title="Parcel ID"> <br> 
+                    <input type="text" name="new_area" class="change-location" placeholder="Enter present location"> <br>
+                        <button type="submit" id="sbt-button">Save</button>
+                    </form>
+            </div>
+            </div>
+
+    </div>
+  </div>
+  
+  <div id="id05" class="ADC-CH1-modal">
+    <div class="ADC-CH1-modal-content ADC-CH1-card-4 ADC-CH1-animate-zoom">
+  
+      <div class="ADC-CH1-center"><br>
+        <span onclick="document.getElementById('id05').style.display='none'" class="ADC-CH1-button ADC-CH1-xlarge ADC-CH1-transparent ADC-CH1-display-topright" title="Close Modal">&times;</span>
+      </div>
+
+      <div id="content-change">
+
+            <div class="container">
+                <h1>Change Present Location</h1>
+                    <form action="#Tokyo">
+                     
+                    <input type="text" name="parcel_number" value="#005A" class="change-location" title="Parcel ID"> <br> 
+                    <input type="text" name="new_area" class="change-location" placeholder="Enter present location"> <br>
+                        <button type="submit" id="sbt-button">Save</button>
+                    </form>
+            </div>
+            </div>
+
+    </div>
+  </div>
 
   <div id="id02" class="ADC-CH1-modal">
     <div class="ADC-CH1-modal-content ADC-CH1-card-4 ADC-CH1-animate-zoom">
@@ -190,6 +256,54 @@
                      
                     <input type="text" name="parcel_number" value="#001A" class="change-location" title="Parcel ID"> <br> 
                     <input type="text" name="parcel_name" value="Chairs" class="change-location" title="Parcel ID"> <br>
+                    <input type="text" name="new_area" class="change-location" placeholder="Change Status"> <br>
+                        <button type="submit" id="sbt-button">Save</button>
+                    </form>
+            </div>
+            </div>
+
+    </div>
+    </div>
+
+    <div id="id04" class="ADC-CH1-modal">
+    <div class="ADC-CH1-modal-content ADC-CH1-card-4 ADC-CH1-animate-zoom">
+  
+      <div class="ADC-CH1-center"><br>
+        <span onclick="document.getElementById('id04').style.display='none'" class="ADC-CH1-button ADC-CH1-xlarge ADC-CH1-transparent ADC-CH1-display-topright" title="Close Modal">&times;</span>
+      </div>
+
+      <div id="content-change">
+
+            <div class="container">
+                <h1>Edit Status</h1>
+                    <form action="#Tokyo">
+                     
+                    <input type="text" name="parcel_number" value="#003A" class="change-location" title="Parcel ID"> <br> 
+                    <input type="text" name="parcel_name" value="Television Set" class="change-location" title="Parcel ID"> <br>
+                    <input type="text" name="new_area" class="change-location" placeholder="Change Status"> <br>
+                        <button type="submit" id="sbt-button">Save</button>
+                    </form>
+            </div>
+            </div>
+
+    </div>
+    </div>
+
+    <div id="id06" class="ADC-CH1-modal">
+    <div class="ADC-CH1-modal-content ADC-CH1-card-4 ADC-CH1-animate-zoom">
+  
+      <div class="ADC-CH1-center"><br>
+        <span onclick="document.getElementById('id06').style.display='none'" class="ADC-CH1-button ADC-CH1-xlarge ADC-CH1-transparent ADC-CH1-display-topright" title="Close Modal">&times;</span>
+      </div>
+
+      <div id="content-change">
+
+            <div class="container">
+                <h1>Edit Status</h1>
+                    <form action="#Tokyo">
+                     
+                    <input type="text" name="parcel_number" value="#005A" class="change-location" title="Parcel ID"> <br> 
+                    <input type="text" name="parcel_name" value="Clothes" class="change-location" title="Parcel ID"> <br>
                     <input type="text" name="new_area" class="change-location" placeholder="Change Status"> <br>
                         <button type="submit" id="sbt-button">Save</button>
                     </form>

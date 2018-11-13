@@ -63,7 +63,7 @@
        <div class="panel-heading">
          <strong>
            <span class="glyphicon glyphicon-th"></span>
-           <span>Latest parcels</span>
+           <span>Parcel Orders</span>
          </strong>
        </div>
        <div class="panel-body">
@@ -80,17 +80,38 @@
           <tbody>
             <tr>
               <td>15000/=</td>
-              <td>kireka</td>
+              <td>Kireka</td>
               <td>Pending</td>
               <td>Ntinda</td>
               <td>Mityana</td>
             </tr>
             <tr>
               <td>25000/=</td>
-              <td>mukono</td>
+              <td>Mukono</td>
               <td>In Transit</td>
               <td>Kampala</td>
               <td>Mbarara</td>
+            </tr>
+            <tr>
+              <td>500000/=</td>
+              <td>Arua</td>
+              <td>In Transit</td>
+              <td>Gulu</td>
+              <td>Arua town</td>
+            </tr>
+            <tr>
+              <td>250000/=</td>
+              <td>Mbale</td>
+              <td>Pending</td>
+              <td>Kampala</td>
+              <td>Mbale town</td>
+            </tr>
+            <tr>
+              <td>300000/=</td>
+              <td>Masaka</td>
+              <td>Delivered</td>
+              <td>Masaka</td>
+              <td>Masaka Town</td>
             </tr>
           <tbody>
          </table>
@@ -133,10 +154,10 @@
 <div class="ADC-C1-third ADC-C1-margin-bottom">
   <ul class="ADC-C1-ul ADC-C1-border ADC-C1-center ADC-C1-hover-shadow">
     <li class="ADC-C1-black ADC-C1-xlarge ADC-C1-padding-32">All Orders</li>
-    <li class="ADC-C1-padding-16"><b>#001</b> Tom</li>
-    <li class="ADC-C1-padding-16"><b>#002</b> Jane</li>
-    <li class="ADC-C1-padding-16"><b>#003</b> Peter</li>
-    <li class="ADC-C1-padding-16"><b>#004</b> Simon</li>
+    <li class="ADC-C1-padding-16"><b>#001</b> Chairs</li>
+    <li class="ADC-C1-padding-16"><b>#002</b> Table</li>
+    <li class="ADC-C1-padding-16"><b>#003</b> Clothes</li>
+    <li class="ADC-C1-padding-16"><b>#004</b> Television</li>
     <li class="ADC-C1-padding-16">
       <h2 class="ADC-C1-wide">See More</h2>
       <span class="ADC-C1-opacity">Orders</span>
@@ -159,7 +180,7 @@
          <table class="table table-striped table-bordered table-condensed">
           <thead>
            <tr>
-             <th>Customer Name</th>
+             <th>Receiver Name</th>
              <th>Price</th>
              <th>Destination</th>
              <th>Date</th>
@@ -179,14 +200,14 @@
               <td>20000/=</td>
               <td>Gulu</td>
               <td>4/9/2018 09:30:05</td>
-              <td><a href="" class="btn1 btn1-primary">Edit</a> <a href="" class="btn1 btn1-primary">Cancel</a></td>
+              <td><button class="btn1 btn1-primary" onclick="document.getElementById('id03').style.display='block'">Edit</button> <button class="btn1 btn1-primary" onclick="document.getElementById('id04').style.display='block'">Cancel</button></td>
             </tr>
             <tr>
               <td>Grace</td>
               <td>36000/=</td>
               <td>Mbarara</td>
               <td>5/9/2018 16:00:05</td>
-              <td><a href="" class="btn1 btn1-primary">Edit</a> <a href="" class="btn1 btn1-primary">Cancel</a></td>
+              <td><button class="btn1 btn1-primary" onclick="document.getElementById('id05').style.display='block'">Edit</button> <button class="btn1 btn1-primary" onclick="document.getElementById('id06').style.display='block'">Cancel</button></td>
             </tr>
           <tbody>
          </table>
@@ -233,6 +254,29 @@
                      
                     <input type="text" name="parcel_number" value="#001A" class="change-location" title="Parcel ID"> <br> 
                     <input type="text" name="new_area" class="change-location" placeholder="Enter new Destination"> <br>
+                        <button type="submit" id="sbt-button">Change Destination</button>
+                    </form>
+            </div>
+            </div>
+
+    </div>
+  </div>
+
+  <div id="id03" class="ADC-CH1-modal">
+    <div class="ADC-CH1-modal-content ADC-CH1-card-4 ADC-CH1-animate-zoom">
+  
+      <div class="ADC-CH1-center"><br>
+        <span onclick="document.getElementById('id03').style.display='none'" class="ADC-CH1-button ADC-CH1-xlarge ADC-CH1-transparent ADC-CH1-display-topright" title="Close Modal">&times;</span>
+      </div>
+
+      <div id="content-change">
+
+            <div class="container">
+                <h1>Change Destination</h1>
+                    <form action="#Tokyo">
+                     
+                    <input type="text" name="parcel_number" value="#002A" class="change-location" title="Parcel ID"> <br> 
+                    <input type="text" name="new_area" class="change-location" placeholder="Enter new Destination"> <br>
                         <button type="submit" id="sbt-button">CHANGE Destination</button>
                     </form>
             </div>
@@ -241,6 +285,28 @@
     </div>
   </div>
   
+  <div id="id05" class="ADC-CH1-modal">
+    <div class="ADC-CH1-modal-content ADC-CH1-card-4 ADC-CH1-animate-zoom">
+  
+      <div class="ADC-CH1-center"><br>
+        <span onclick="document.getElementById('id05').style.display='none'" class="ADC-CH1-button ADC-CH1-xlarge ADC-CH1-transparent ADC-CH1-display-topright" title="Close Modal">&times;</span>
+      </div>
+
+      <div id="content-change">
+
+            <div class="container">
+                <h1>Change Destination</h1>
+                    <form action="#Tokyo">
+                     
+                    <input type="text" name="parcel_number" value="#003A" class="change-location" title="Parcel ID"> <br> 
+                    <input type="text" name="new_area" class="change-location" placeholder="Enter new Destination"> <br>
+                        <button type="submit" id="sbt-button">CHANGE Destination</button>
+                    </form>
+            </div>
+            </div>
+
+    </div>
+  </div>
 
   <div id="id02" class="ADC-CH1-modal">
     <div class="ADC-CH1-modal-content ADC-CH1-card-4 ADC-CH1-animate-zoom">
@@ -257,6 +323,52 @@
                      
                     <input type="text" name="parcel_number" value="#001A" class="change-location" title="Parcel ID"> <br> 
                     <input type="text" name="parcel_name" value="Chairs" class="change-location" title="Parcel ID"> <br>
+                        <button type="submit" id="sbt-button">Cancel</button>
+                    </form>
+            </div>
+            </div>
+
+    </div>
+  </div>
+
+  <div id="id04" class="ADC-CH1-modal">
+    <div class="ADC-CH1-modal-content ADC-CH1-card-4 ADC-CH1-animate-zoom">
+  
+      <div class="ADC-CH1-center"><br>
+        <span onclick="document.getElementById('id04').style.display='none'" class="ADC-CH1-button ADC-CH1-xlarge ADC-CH1-transparent ADC-CH1-display-topright" title="Close Modal">&times;</span>
+      </div>
+
+      <div id="content-change">
+
+            <div class="container">
+                <h1>Cancel Order</h1>
+                    <form action="#Tokyo">
+                     
+                    <input type="text" name="parcel_number" value="#002A" class="change-location" title="Parcel ID"> <br> 
+                    <input type="text" name="parcel_name" value="Clothes" class="change-location" title="Parcel ID"> <br>
+                        <button type="submit" id="sbt-button">Cancel</button>
+                    </form>
+            </div>
+            </div>
+
+    </div>
+  </div>
+
+  <div id="id06" class="ADC-CH1-modal">
+    <div class="ADC-CH1-modal-content ADC-CH1-card-4 ADC-CH1-animate-zoom">
+  
+      <div class="ADC-CH1-center"><br>
+        <span onclick="document.getElementById('id06').style.display='none'" class="ADC-CH1-button ADC-CH1-xlarge ADC-CH1-transparent ADC-CH1-display-topright" title="Close Modal">&times;</span>
+      </div>
+
+      <div id="content-change">
+
+            <div class="container">
+                <h1>Cancel Order</h1>
+                    <form action="#Tokyo">
+                     
+                    <input type="text" name="parcel_number" value="#003A" class="change-location" title="Parcel ID"> <br> 
+                    <input type="text" name="parcel_name" value="Tables" class="change-location" title="Parcel ID"> <br>
                         <button type="submit" id="sbt-button">Cancel</button>
                     </form>
             </div>
